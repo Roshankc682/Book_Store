@@ -1,0 +1,14 @@
+
+
+.first_container{
+    background-color: white;
+    height: auto;
+    width: auto;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 5px;
+    /*box-shadow: rgba(0,0,0,0.8) 0 0 30px;*/
+    /*border-collapse: collapse;*/
+}
+
+

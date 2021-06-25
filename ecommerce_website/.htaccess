@@ -1,0 +1,12 @@
+#no access to the directory
+
+Options -Indexes
+
+#no access to the php or jpg or folder
+IndexIgnore *.php *.jpg *.html *.png *.css *.csv *.txt 
+
+#comment *.php *.png 
+
+
+
+ErrorDocument 404 /ecommerce_website/404.php

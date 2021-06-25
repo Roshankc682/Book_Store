@@ -1,0 +1,19 @@
+.flex-container {
+  display: flex;
+  /*background-color: DodgerBlue;*/
+    flex-wrap: wrap;
+
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 350px;
+  margin: 10px;
+  padding: 20px; 	  
+  border-radius: 20px;
+}
+
+ .hover_effect:hover {  
+ 	 box-shadow: 5px 10px #888888;
+ 	  border-radius: 5px;
+}

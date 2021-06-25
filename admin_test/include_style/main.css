@@ -1,0 +1,12 @@
+ .description_style{
+        height:200px;
+        width:300px;
+        font-size: 15px;
+    }
+
+    .add_new_center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
