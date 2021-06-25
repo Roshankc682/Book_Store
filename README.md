@@ -93,3 +93,118 @@ $to_email = 'receiver-email@gmail.com';
   
   
 $to_email = 'sender-email@gmail.com';
+  
+  
+## Picture of Interface :
+  
+  ***For Admin Interface:***
+  
+  >login Panel
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/1_admin_panel.png" width="450" height="500">  
+  
+   >Admin Insert Details
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/2_insert.png" width="80%" height="80%">
+  
+  
+   >Admin Delete Details
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/3_delete.png" width="80%" height="80%">
+  
+  
+  
+   >Admin Edit Details
+  
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/4_edit_update.png" width="80%" height="80%">
+  
+  
+    
+  >Admin Order Details
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/6_order_details.png" width="80%" height="80%">
+  
+ 
+  
+  
+  ***For User Interace :***
+  
+  
+  >Register ACC
+  
+  <img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/1_registration.png" width="100%" height="80%">
+  
+    
+  
+  >Register Confirm
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/2_register_email.png" width="70%" height="70%">
+  
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/3_login.png" width="50%" height="50%">
+  
+   
+  >Interface
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/4_suerINterface.png" width="70%" height="90%">
+  
+      
+  
+  >Reviews Interface
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/5_reviews_of_book.png" width="85%" height="90%">
+  
+      
+  
+  >Reviews Details
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/6_details_of_books.png" width="85%" height="90%">
+  
+  
+  
+  >Reviews order details
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/6_order_details.png" width="85%" height="90%">
+  
+ 
+  >User Panel
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/7_user_panel.png" width="85%" height="90%">
+  
+ 
+  >Reviews Cart
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/8%20user%20cart.png" width="85%" height="90%">
+  
+  
+  >Information Details
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/9%20user%20information.png" width="85%" height="90%">
+  
+  
+  >Card Info
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/10%20user%20card%20info.png" width="30%" height="90%">
+  
+  
+  >Password Reset
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/11%20password%20reset.png" width="50%" height="40%">
+  
+  
+  >Eamil confirm 
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/asfasdfadf.png" width="70%" height="90%">
+  
+  
+  >Full Reviews
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/out%20of%20stock.png" width="85%" height="90%">
+  
+  
+  >Reviews User Details
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/user_details.png" width="100%" height="90%">
+  
+  
