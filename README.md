@@ -10,30 +10,32 @@
 ##### ======================================= 
 
 ***Create Book table***
-**CREATE TABLE book ( book_id VARCHAR(100) PRIMARY KEY , title VARCHAR(50) NOT NULL, author VARCHAR(50) NOT NULL, price VARCHAR(30) NOT NULL, image VARCHAR(100), category VARCHAR(50), description VARCHAR(10000) NOT NULL )**
+
+>CREATE TABLE book ( book_id VARCHAR(100) PRIMARY KEY , title VARCHAR(50) NOT NULL, author VARCHAR(50) NOT NULL, price VARCHAR(30) NOT NULL, image VARCHAR(100), category VARCHAR(50), description VARCHAR(10000) NOT NULL )
 
 **CREATE TABLE book_details_more( book_id VARCHAR(100) PRIMARY KEY,author VARCHAR(50) NOT NULL, first_co_author VARCHAR(500),publisher VARCHAR(500),stock int(255))**
 
 ***Create user-delivery  section where admin will see how many have ordered***
 
-**CREATE TABLE user_deliver ( id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, full_name VARCHAR(30) NOT NULL, book_name VARCHAR(500) NOT NULL, street1 VARCHAR(30) NOT NULL, street2 VARCHAR(50), city VARCHAR(50), zip VARCHAR(50), toal_cost_pass VARCHAR(50), stripeToken VARCHAR(50), stripeEmail VARCHAR(50), hash_token_for_client_for_ship VARCHAR(50), time TIMESTAMP DEFAULT CURRENT_TIMESTAMP )**
+>CREATE TABLE user_deliver ( id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, full_name VARCHAR(30) NOT NULL, book_name VARCHAR(500) NOT NULL, street1 VARCHAR(30) NOT NULL, street2 VARCHAR(50), city VARCHAR(50), zip VARCHAR(50), toal_cost_pass VARCHAR(50), stripeToken VARCHAR(50), stripeEmail VARCHAR(50), hash_token_for_client_for_ship VARCHAR(50), time TIMESTAMP DEFAULT CURRENT_TIMESTAMP )
 
 ##### =============================================
 ##### create a players database then run sql query 
 ##### =============================================
 ***Create admin section***
 
-**CREATE TABLE mail_change( id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,user_id VARCHAR(100),new_email VARCHAR(50) NOT NULL, token VARCHAR(500))**
+>CREATE TABLE mail_change( id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,user_id VARCHAR(100),new_email VARCHAR(50) NOT NULL, token VARCHAR(500))
 
 
-**CREATE TABLE admin ( id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, user VARCHAR(30) NOT NULL, password VARCHAR(100) NOT NULL )**
+>CREATE TABLE admin ( id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, user VARCHAR(30) NOT NULL, password VARCHAR(100) NOT NULL )
+
 >Then add admin user and password as per client demand manually
 
 
 >The username and password is admin & admin respectively (Hashed in md5 )
 
 
-**INSERT INTO admin (user,password) VALUES ('admin', '21232f297a57a5a743894a0e4a801fc3');**
+>INSERT INTO admin (user,password) VALUES ('admin', '21232f297a57a5a743894a0e4a801fc3');
 
 **Set the email address for localserver**
 
