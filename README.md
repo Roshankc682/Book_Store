@@ -103,7 +103,7 @@ $to_email = 'sender-email@gmail.com';
   
   >login Panel
   
-<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/1_admin_panel.png" width="450" height="500">  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/1_admin_panel.png" width="550" height="300">  
   
    >Admin Insert Details
   
@@ -165,9 +165,13 @@ $to_email = 'sender-email@gmail.com';
   
   
   
-  >Reviews order details
+  >Reviews Books
   
-<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/6_order_details.png" width="85%" height="90%">
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/4_see_reviews.png" width="85%" height="90%">
+  
+ >One reviews
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/5_reviews%20details.png" width="85%" height="90%">
   
  
   >User Panel
@@ -190,9 +194,18 @@ $to_email = 'sender-email@gmail.com';
 <img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/10%20user%20card%20info.png" width="30%" height="90%">
   
   
-  >Password Reset
+  >Admin Password Reset
   
-<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/11%20password%20reset.png" width="50%" height="40%">
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/11%20password%20reset%20first.png" width="50%" height="40%">
+  
+  
+ >Admin Reset pass Email
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/19_admin_reset_pass_mail.png" width="50%" height="40%">
+  
+ >Admin Reset pass Final
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/19_admin_reset_pass.png" width="50%" height="40%">
   
   
   >Eamil confirm 
