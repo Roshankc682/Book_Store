@@ -193,12 +193,7 @@ $to_email = 'sender-email@gmail.com';
   
 <img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/10%20user%20card%20info.png" width="30%" height="90%">
   
-  
-  >Admin Password Reset
-  
-<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/11%20password%20reset%20first.png" width="50%" height="40%">
-  
-  
+ 
  >Admin Reset pass Email
   
 <img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/19_admin_reset_pass_mail.png" width="50%" height="40%">
@@ -206,6 +201,22 @@ $to_email = 'sender-email@gmail.com';
  >Admin Reset pass Final
   
 <img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/19_admin_reset_pass.png" width="50%" height="40%">
+  
+  
+   >User Password Reset
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/11%20password%20reset%20first.png" width="50%" height="40%">
+  
+  
+ >User Reset pass Email
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/11%20password%20reset%20email.png" width="50%" height="40%">
+  
+ >User Reset pass Final
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/11%20password%20reset%20third.png" width="50%" height="40%">
+  
+  
   
   
   >Eamil confirm 
@@ -221,5 +232,13 @@ $to_email = 'sender-email@gmail.com';
   >Reviews User Details
   
 <img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/user_details.png" width="100%" height="90%">
+  
+  
+  
+  >Track and Cancle Order
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/12%20Track%20Order.png" width="100%" height="90%">
+  
+<img src="https://github.com/Roshankc682/Book_Store/blob/master/Image/13%20cancle%20order%20Mail.png" width="100%" height="90%">
   
   
