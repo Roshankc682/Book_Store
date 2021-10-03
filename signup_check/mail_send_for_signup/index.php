@@ -18,7 +18,7 @@
                 echo "<center><h1>Sending message wait few Seconds</h1></center>";
                 // exit();
                 
-                $from = 'E-commerce-website';
+                $from = " Online Book Store";
                 $to_email = $message_to_be_send_email;
                 $subject = 'From : E-commerce-website Create account ';
                  $URLNAME = "http://$_SERVER[HTTP_HOST]";

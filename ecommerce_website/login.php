@@ -1,3 +1,5 @@
+<title>Online Book Store | Login</title>
+<link rel="shortcut icon" type="image/jpg" href="https://wallpaperaccess.com/full/124378.jpg"/>
 
 <head>
     <!-- for recapcha -->
@@ -6,6 +8,17 @@
       <!--This handle the style red color pretty simple ->>> hmmm cool stuff-->
 
   <style type="text/css">
+   body {
+            margin: 0;
+            padding: 0;
+            // background-color: #17a2b8;
+            height: 100vh;
+            background-image: url("https://wallpaperaccess.com/full/124378.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+
+          }
 
     .appear_after_invalid_credential{
                         background-color: #f44336;
@@ -76,7 +89,7 @@ else
 
 echo ' <div class="container">
     <div class="row">
-      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto" style="opacity:0.8;">
         <div class="card card-signin my-5">
         <div class="card-body">
             <h5 class="card-title text-center">Login</h5>';
@@ -91,15 +104,18 @@ echo ' <div class="container">
                     </button>
                   </div>';
             }
+            $public_key = '6LdjEeQaAAAAACb7HVp1MdIdTR_VbgRqO7hRqUjK';
               echo '<form action="includes/login.inc.php" class="form-login" method="post">
               
               <div class="form-label-group">
+              <b><label for="inputusername">E-mail</label></b>
                 <input type="email" name="name" placeholder="E-mail" type="email" id="inputusername" class="form-control" required autofocus>
-                <label for="inputusername">E-mail</label>
-              </div>
+                
+              </div><br>
               <div class="form-label-group">
+              <b><label for="inputpassword">Password</label></b>
                 <input type="password" name="pwd" id="inputpassword" class="form-control" placeholder="password" required>
-                <label for="inputpassword">Password</label>
+                
               </div>
 
 
@@ -111,9 +127,9 @@ echo ' <div class="container">
                 <br>
       <form action="?" method="POST">
 
-        <div class="g-recaptcha" data-sitekey="6LdjEeQaAAAAACb7HVp1MdIdTR_VbgRqO7hRqUjK" data-callback="enableBtn"></div>
+        <div class="g-recaptcha" data-sitekey="'.$public_key.'" data-callback="enableBtn"></div>
 
-          <label>Solve the capcha to enable login</label>
+                  <label><b>Solve the capcha to enable login</b></label>
               <button id="but" class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" name="login-submit">Login</button>
          </form> 
              

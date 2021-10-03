@@ -4,6 +4,7 @@ session_start();
 
  <!-- Required meta tags -->
     <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/jpg" href="https://www.pngfind.com/pngs/m/528-5286002_forum-admin-icon-png-nitzer-ebb-that-total.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->

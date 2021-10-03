@@ -77,6 +77,8 @@ html {
   }
 }
 </style>
+<title>Online Book Store | About</title>
+
 </head>
 <body>
 <br>

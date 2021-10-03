@@ -1,13 +1,27 @@
 <?php
 session_start();
 ?>
+<?php
+if(isset($_SESSION['name']))
+{
+  if (strcmp($_SESSION['name'], "admin") !== 0) {}
+  else {
 
+       echo '<script> 
+              window.location.replace("http://localhost/admin_test/order.php");
+              </script>';
+        exit();
+  } 
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link rel="shortcut icon" type="image/jpg" href="https://wallpaperaccess.com/full/124378.jpg"/>
+    
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 
@@ -225,11 +239,12 @@ session_start();
                         ?>
 
                       <?php echo '</sup></a>
+                      <a href="track_order.php?username=';?><?php echo $user_name; ?> <?php echo '">Track Your order</a>
                       <a href="about.php">About</a>
                       <a href="contact.php"><i class="fas fa-id-badge"></i> Contact</a>
                       <a href="#">
                           <form action="includes/logout.inc.php" method="post">
-                              <button style="color: white;" class="logout_button" id="button_link_logout" type="submit" name="logout-submit">logout</button>
+                              <button style="color: white;" class="logout_button" id="button_link_logout" type="submit" name="logout-submit"><i class="fa fa-sign-out" aria-hidden="true"></i> logout</button>
                           </form>
                       </a>
                           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -311,7 +326,7 @@ session_start();
               <a href="login.php"><i class="fas fa-user"></i> login</a>
               <a href="/signup_check/signup.php?create_account"><i class="fas fa-user"></i> signup</a>
               <a href="contact_without_login.php"><i class="fas fa-id-badge"></i> Contact</a>
-              <a href="about.php"><i class="fad fa-address-card"></i> About</a>
+              <a href="about.php"><i class="fas fa-address-card"></i> About</a>
               <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
               </a>

@@ -13,9 +13,11 @@ else
 {
 				echo'
                 <!-- Required meta tags -->
+                    <title>Admin | Login</title>
+
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+            <link rel="shortcut icon" type="image/jpg" href="https://www.pngfind.com/pngs/m/528-5286002_forum-admin-icon-png-nitzer-ebb-that-total.png"/>
             <!-- Bootstrap CSS -->
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -29,27 +31,40 @@ else
   
           <head>
           <style>
-                  body {
+          .admin_pic {
+              vertical-align: middle;
+              width: 70px;
+              height: 70px;
+              border-radius: 50%;
+            }
+            body {
             margin: 0;
             padding: 0;
-            background-color: #17a2b8;
+            // background-color: #17a2b8;
             height: 100vh;
+            background-image: url("https://wallpaperaccess.com/full/124378.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+
           }
           #login .container #login-row #login-column #login-box {
-            margin-top: 120px;
+            margin-top: 90px;
             max-width: 600px;
             height: 420px;
             border: 1px solid #9C9C9C;
             background-color: #EAEAEA;
+            opacity: 0.9;
+            border-radius:60px;
           }
           #login .container #login-row #login-column #login-box #login-form {
-            padding: 20px;
+            padding: 3px;
           }
           #login .container #login-row #login-column #login-box #login-form #register-link {
-            margin-top: -85px;
+            margin-top: -50px;
           }
                   </style>
-        </head>';
+        </head><br>';
 
     
             $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
@@ -118,26 +133,25 @@ else
             }
             
 
-        echo '  <div id="login">
-        <h3 class="text-center text-white pt-5">Admin Panel</h3>
+        echo '<div id="login">
         <div class="container">
             <div id="login-row" class="row justify-content-center align-items-center">
                 <div id="login-column" class="col-md-6">
                     <div id="login-box" class="col-md-12">
                         <form id="login-form" class="form" action="login_inc.php" method="post">
-                            <h3 class="text-center text-info">Login</h3>
+                            <h4 class="text-center text-info"><b>Admin login Panel</b></h4>
+                            <center><img src="https://www.pngfind.com/pngs/m/528-5286002_forum-admin-icon-png-nitzer-ebb-that-total.png" alt="Avatar" class="admin_pic"></center>
                             <div class="form-group">
-                                <label for="username" class="text-info">Username:</label><br>
-                                <input type="text" name="name" id="username" class="form-control">
+                                <b>Username</b>
+                                <input type="text" name="name" id="username" class="form-control" placeholder="Enter username">
                             </div>
                             <div class="form-group">
-                                <label for="password" class="text-info">Password:</label><br>
-                                <input type="password" name="pwd" id="password" class="form-control">
+                                <b>Password</b>
+                                <input type="password" name="pwd" id="password" class="form-control" placeholder="Enter Password">
                             </div>
                             <div class="form-group">
-                                <center><a href="http://localhost/admin_test/password_reset_final.php?admin=password_reset" type="button" class="btn btn-primary btn-lg btn-block btn-danger"   value="Forgot Password">Forgot Password</a>
-                                    <br>
-                                <input type="submit" name="login-submit" class="btn btn-primary btn-lg btn-block btn-info btn-md" value="login"><center>
+                                <input type="submit" name="login-submit" class="btn btn-primary btn-lg btn-block btn-info btn-md" value="Login">
+                                <a href="http://localhost/admin_test/password_reset_final.php?admin=password_reset" type="button" class="btn btn-primary btn-lg btn-block btn-danger"   value="Forgot Password">Forgot Password</a>
                             </div>
                             
                         </form>

@@ -40,45 +40,40 @@
                     'Reply-To: '.$from."\r\n" .
                     'X-Mailer: PHP/' . phpversion();
 
-		$data_insert_in_databse_for_reset = "INSERT INTO `password_reset_temp` (email, expDate) VALUES ('$to_email', '$user_claim_time_to_reset_password')";
+	
+		 $data_insert_in_databse_for_reset = "INSERT INTO `password_reset_temp` (email, expDate) VALUES ('$to_email', '$user_claim_time_to_reset_password')";
 		
 
 		$body = '<html>
                       <head>
                       <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
                       <style>
+                      .font-size{
+                      	font-size: 20px;
+                      }
                      .btn {
-												  background: #f1f1f3;
-												  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-												  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-												  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-												  background-image: -o-linear-gradient(top, #3498db, #2980b9);
-												  background-image: linear-gradient(to bottom, #3498db, #2980b9);
-												  -webkit-border-radius: 16;
-												  -moz-border-radius: 16;
+												  background: #c8c3d24d;
 												  border-radius: 16px;
 												  font-family: Courier New;
-												  color: #ffffff;
-												  font-size: 16px;
+                     	  	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                     	  	transition-duration: 0.4s;
+												  font-size: 20px;
 												  padding: 10px 20px 10px 20px;
 												  text-decoration: none;
 												}
 
 												.btn:hover {
-												  background: #3cb0fd;
-												  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-												  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-												  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-												  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-												  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+												  background-color: #FF9494;
+												  transition-duration: 0.4s;
+  												font-color: black;
 												  text-decoration: none;
 												}
                       </style>
                       </head>
-                      <body><center><div>
-                      <h4>To reset your password click below button if not then leave it<h4>
-                      <br><a class="btn" href="'.$message.'">Click to reset the password</a><div><br>
-                      <h4 style="color:red;">Don\'t share this link to other third party !!!</h4></center>
+                      <body><center>
+                      <p style="color:red;" class="font-size"><b>Seems like Admin forgot his/her Password <br> To reset your password click below button if not then leave it</b></p>
+                      <br><a class="btn" href="'.$message.'"><b>Click to reset the password</b></a><br>
+                      <h4 class="font-size" style="color:red;">Don\'t share this link to other third party !!!</h4></center>
                         </body>
                         </html>';
 

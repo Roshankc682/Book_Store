@@ -9,32 +9,55 @@ require "header.php";
 
 
 				
-								include "require_image.php";
+					include "require_image.php";
 					echo '
 					
 
-
-						<!-- =====Search bar first container======== -->
-							<form class="example" action="search.php?search=WILL_WORK_SOON" method="GET" style="margin:auto;max-width:300px">
-  								<input type="text" placeholder="Search.." name="search_by_user">
-  								<button type="submit"><i class="fa fa-search"></i></button>
+							<!-- =====Search bar first container======== -->
+							<form class="form-inline my-2 my-lg-0" action="search.php" method="GET" style="margin:auto;max-width:600px;">
+  								<input style="width: 500px;" class="form-control mr-sm-2" type="search" placeholder="Search by name , category , Author ..." aria-label="Search" name="search_by_user">
+  								<button style="width: 50px;" class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
 							</form>';
 							echo "<br>";
 
 
 
 							echo '<hr>';
-							 echo '<center><form action="sci-fi.php"  metho="post">
-												  <label for="books_cate">Choose a book genere:</label>
-												  <select name="books_cat" id="books">
+							 echo '<center><form action="search.php"  method="GET" style="width: 300px;">
+												  <label for="search_by_user"><b>Choose a book genere</b></label>
+												  <select class="form-control m-1" name="search_by_user" id="books">
 												    <option value="sci-fi">sci-fi</option>
 												    <option value="mystery">mystery</option>
-												    <option value="suspense">suspense</option>
+												     <option value="suspense">suspense</option>
+													 <option value="Fantasy">Fantasy</option>
+													 <option value="Adventure">Adventure</option>
+													 <option value="Romance">Romance</option>
+													 <option value="Contemporary">Contemporary</option>
+													 <option value="Dystopian">Dystopian</option>
+													 <option value="Mystery">Mystery</option>
+													 <option value="Horror">Horror</option>
+													 <option value="Thriller">Thriller</option>
+													 <option value="Paranormal">Paranormal</option>
+													 <option value="Historical">Historical fiction</option>
+													 <option value="Science">Science Fiction</option>
+													 <option value="Memoir">Memoir</option>
+													 <option value="Cooking">Cooking</option>
+													 <option value="Art">Art</option>
+													 <option value="Self-help / Personal">Self-help / Personal</option>
+													 <option value="Development">Development</option>
+													 <option value="Motivational">Motivational</option>
+													 <option value="Health">Health</option>
+													 <option value="History">History</option>
+													 <option value="Travel">Travel</option>
+													 <option value="Guide">Guide / How-to</option>
+													 <option value="Families & Relationships">Families & Relationships</option>
+													 <option value="Humor">Humor</option>
+													 <option value="Children’s">Children’s</option>
+													 <option value="Knowing">Knowing</option>
 												    </select>
-												  <input type="submit" value="Submit">
+												  <input class="btn btn-outline-info" type="submit" value="search">
 												</form></center>
 												';
-			  				
 						
 					            echo '<div class="">
 					            		<center><i class="fas fa-fire"></i>&nbsp;Popular Genres &nbsp; &nbsp;
@@ -90,7 +113,15 @@ require "header.php";
 
     echo '<br>';
     if($count == 0){
-     	echo "<center><h2>Nothing Found </h2></center>";
+     	echo '<div class="container">
+												<title>Online Book Store | 404 Error</title>
+												
+													<center><h4 style="color:red;">Book Not in Store</h4>
+													<img style="width:300px;height: 300px;" src="image/not_found.png"><br><br>
+													 <a  type="submit" class="btn btn-info " href="/ecommerce_website/login.php"><i class="fas fa-search"></i> search more </a></center>
+													</center>
+												
+											</div>';
      		  echo '</div>
 								        <br>
 								</div>';

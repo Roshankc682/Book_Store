@@ -27,7 +27,7 @@
 
 		<style type="text/css">
 			table{
-				border: 1px solid black;
+				/*border: 1px solid black;*/
 				  border-spacing: 5px;
 				border-collapse: collapse;
 				width: 70%;

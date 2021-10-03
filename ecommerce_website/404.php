@@ -3,6 +3,7 @@
 ?>
 <br><br>
 <div class="container">
+	<title>Online Book Store | 404 Error</title>
 	<div class="shadow p-3 mb-5 bg-white rounded">
 		<center><h1>Page Not Found</h1>
 		<img style="width:400px;height: 400px;" src="404.jpg"><br>

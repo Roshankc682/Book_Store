@@ -101,7 +101,7 @@
                   type="text"
                   name="Co-Author" 
                   id="coaut"
-                  placeholder="Write co-authorname seperate by ," />
+                  placeholder="Write co-author Name Seperate by (,) comma" />
 
                  <label>Publisher</label>
                    <input class="form-control"

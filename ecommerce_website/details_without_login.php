@@ -247,7 +247,7 @@ require "footer.php";
                // echo $row_html_array_comment_verify[$index33]; // etc
 
           }
-      echo "<center><h3>Reviews of products<h3></center>";
+      echo "<center><h3>Reviews of Book<h3></center>";
       
       while($row_html=mysqli_fetch_assoc($result_html))
       {

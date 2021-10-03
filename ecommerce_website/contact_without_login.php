@@ -24,7 +24,9 @@
                 //nothing :)
             }
 
-    echo '<div class="container">
+    echo '
+    <title>Online Book Store | Contact</title>
+    <div class="container">
     <!--Section: Contact v.2-->
 <section class="mb-4">
 

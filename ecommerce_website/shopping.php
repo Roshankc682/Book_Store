@@ -36,7 +36,7 @@
 					if (strpos($fullUrl, "message=shop_more_readmore")== true) 
 		            {
 		            	 echo ' <br><br><div class="alert alert-info alert-dismissible fade show" style="width: 500px;margin:auto;" role="alert">
-                    				<strong><center>Succesfully Purchased<br>Happy Reading Read More Books</center></strong>
+                    				<strong><center>Succesfully Purchased<br>Happy Reading Read More Books<br>Don\'t forget to check E-mail</center></strong>
                     				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
                       				<span aria-hidden="true">&times;</span>
                     			</button>
@@ -75,9 +75,9 @@
 
 
 						<!-- =====Search bar first container======== -->
-							<form class="example" action="search.php" method="GET" style="margin:auto;max-width:300px">
-  								<input type="text" placeholder="Search.." name="search_by_user">
-  								<button type="submit"><i class="fa fa-search"></i></button>
+							<form class="form-inline my-2 my-lg-0" action="search.php" method="GET" style="margin:auto;max-width:600px;">
+  								<input style="width: 500px;" class="form-control mr-sm-2" type="search" placeholder="Search by name , category , Author ..." aria-label="Search" name="search_by_user">
+  								<button style="width: 50px;" class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
 							</form>';
 							echo "<br>";
 
@@ -87,7 +87,42 @@
 							
 			  				
 						
-					            echo '<div class="">
+					           echo '<center><form action="search.php"  method="GET" style="width: 300px;">
+												  <label for="search_by_user"><b>Choose a book genere</b></label>
+												  <select class="form-control m-1" name="search_by_user" id="books">
+												    <option value="sci-fi">sci-fi</option>
+												    <option value="mystery">mystery</option>
+												     <option value="suspense">suspense</option>
+													 <option value="Fantasy">Fantasy</option>
+													 <option value="Adventure">Adventure</option>
+													 <option value="Romance">Romance</option>
+													 <option value="Contemporary">Contemporary</option>
+													 <option value="Dystopian">Dystopian</option>
+													 <option value="Mystery">Mystery</option>
+													 <option value="Horror">Horror</option>
+													 <option value="Thriller">Thriller</option>
+													 <option value="Paranormal">Paranormal</option>
+													 <option value="Historical">Historical fiction</option>
+													 <option value="Science">Science Fiction</option>
+													 <option value="Memoir">Memoir</option>
+													 <option value="Cooking">Cooking</option>
+													 <option value="Art">Art</option>
+													 <option value="Self-help / Personal">Self-help / Personal</option>
+													 <option value="Development">Development</option>
+													 <option value="Motivational">Motivational</option>
+													 <option value="Health">Health</option>
+													 <option value="History">History</option>
+													 <option value="Travel">Travel</option>
+													 <option value="Guide">Guide / How-to</option>
+													 <option value="Families & Relationships">Families & Relationships</option>
+													 <option value="Humor">Humor</option>
+													 <option value="Children’s">Children’s</option>
+													 <option value="Knowing">Knowing</option>
+												    </select>
+												  <input class="btn btn-outline-info" type="submit" value="search">
+												</form></center>
+												
+											
 					            		<center><i class="fas fa-fire"></i>&nbsp;Popular Genres &nbsp; &nbsp;
 
 
@@ -182,17 +217,22 @@
 
                      if(reg.test(price))
                      {
-                        if(price == 0)
-                        {
-                            alert("Quantity is Zero !!!  ")
-                            return false
-                        }
-                        if(price >= 50)
-                        {
-                            alert("Quantity is Large !!!  ")
-                            return false
-                        }
-                        return true
+                     	var intTest = /^-?(\d+|0)$/;
+						if(intTest.test(price)) {
+						   if(price == 0)
+	                        {
+	                            alert("Quantity is Zero !!!  ")
+	                            return false
+	                        }
+	                        if(price >= 50)
+	                        {
+	                            alert("Quantity is Large !!!  ")
+	                            return false
+	                        }
+	                        return true
+
+						}
+                        
                      }else{
                       alert("Check your quantity again !!! ");
                       return false

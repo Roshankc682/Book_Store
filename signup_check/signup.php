@@ -48,7 +48,7 @@ echo '<form action="includes/signup.inc.php" method="post">
          
   <div class="container">
     <div class="row">
-      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto" style="opacity:0.8;">
         <div class="card card-signin my-5">
           <div class="card-body"><h5 class="card-title text-center">Signup</h5> ';
 
@@ -167,34 +167,40 @@ echo '<form action="includes/signup.inc.php" method="post">
                 
                 
             }
+            $public_key = '6LdjEeQaAAAAACb7HVp1MdIdTR_VbgRqO7hRqUjK';
           	            echo '
           	            		<form action="includes/signup.inc.php" method="post">
 
                         <div class="form-label-group">
+                        <b><label for="inputusername">Username</label></b>
                           <input type="text" name="name" placeholder="Username" id="inputusername" class="form-control" required autofocus>
-                          <center><a>Recommended username followed by number</a></center>
-                <label for="inputusername">Username</label>
+                          <center><a style="color:red;"><b>Recommended username followed by number and (charactes like *,$,% ... are not valid)</b></a></center>
+                
               </div>
               <div class="form-label-group">
+              <b><label for="inputusername">Nickname</label></b>
+              
                           <input type="text" name="Nickname" placeholder="Nickname" id="inputusername" class="form-control" required autofocus>
-                          <center><a>Nickname of user that you like :) </a></center>
-                <label for="inputusername">Nickname</label>
-              </div>
+                          
+                </div>
                   <div class="form-label-group">
+                 <b> <label for="inputEmail">Email</label></b>
+              
                           <input type="text" name="mail" placeholder="E-mail" type="email" id="inputEmail" class="form-control" required autofocus>
-                <label for="inputEmail">Email</label>
-              </div>
+                </div>
 
      <div class="form-label-group">
+      <b><label for="inputpassword">password</label></b>
+              
                           <input type="password" name="pwd" placeholder="password" type="email" id="inputpassword" class="form-control" required autofocus>
-                <label for="inputpassword">password</label>
-              </div>
+               </div>
 
           
      <div class="form-label-group">
+     <b><label for="pwd-repeat">Repeat password</label></b>
+              
                           <input type="password" name="pwd-repeat" placeholder="password" type="email" id="pwd-repeat" class="form-control" required autofocus>
-                <label for="pwd-repeat">Repeat password</label>
-              </div>                
+                </div>                
               <div class="custom-control custom-checkbox mb-3">
                 <input type="checkbox" class="custom-control-input" id="customCheck1">
                 <label class="custom-control-label" for="customCheck1">Remember password</label>
@@ -204,9 +210,10 @@ echo '<form action="includes/signup.inc.php" method="post">
 
         <form action="?" method="POST">
 
-        <div class="g-recaptcha" data-sitekey="6LdjEeQaAAAAACb7HVp1MdIdTR_VbgRqO7hRqUjK" data-callback="enableBtn"></div>
+        <div class="g-recaptcha" data-sitekey="'.$public_key.'" data-callback="enableBtn"></div>
 
-       
+                  <label><b>Solve the capcha to enable login</b></label>
+
               <button id="but" class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" name="signup-submit">signup</button>
           </form> 
      

@@ -17,7 +17,7 @@
 				else
 				{
 					
-		echo '<center><h3>Login to Buy Books</h3></center>';
+		echo '<title>Online Book Store | Home</title><center><h3>Login to Buy Books</h3></center>';
 	echo '<div class="middle_section" style="padding:10px">';
 		// =====Here the cart start using bootstrap======
 

@@ -29,7 +29,7 @@
     </script>
 		<style type="text/css">
 			table{
-				border: 1px solid black;
+				/*border: 1px solid black;*/
 				  border-spacing: 5px;
 				border-collapse: collapse;
 				width: 70%;
@@ -102,7 +102,7 @@
   </form>
 </nav>
 		<br>  <!-- ========================================================= -->
-	<table class="table_name_content" border="1px">
+	<table class="">
 		<!-- <th>BookId</th> -->
 		<th>Title</th>
 		<th>Author</th>
@@ -127,7 +127,7 @@
 
 				
 				echo '<center>';
-				echo '<table border="1px">' ;
+				echo '<table border="">' ;
 					// echo "<td> $row[$index1]<td>";
 					echo "<th colspan='300'> $row[$index2]</th>";
 					echo "<th colspan='300'> $row[$index3]</th>";

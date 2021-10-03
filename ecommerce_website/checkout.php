@@ -25,10 +25,21 @@ $_SESSION['hash_token_for_client_for_ship']  = $hash_token_for_client_for_ship;
 	 // The name of book to save in database
         for ($x = 0; $x < $_SESSION['count']; $x++) 
         {
+
+
+
+
+        $link_of_image_from_server = 'http://localhost/admin_test/image/'.$_SESSION['data_array'][$x]["image"];
+		$img_link = '<a href="http://localhost/ecommerce_website/details_of_product.php?passed_id='.$_SESSION['data_array'][$x]["book_id"].'&see_more_details=Roshan"><img src="'.$link_of_image_from_server.'" style="weight:35px;height:30px;border-radius:50%;" /></a>  ';
           $y = $x;	
-          $save_this[] =  $y+1 . ' : ' .$_SESSION['data_array'][$x]["product_name"].'  ('.$_SESSION['data_array'][$x]["quantity"].' PC )<br>';
+          $save_this[] =  '<p>'.$y+1 . ' : '.$img_link.$_SESSION['data_array'][$x]["product_name"].'  ('.$_SESSION['data_array'][$x]["quantity"].' PC )</p><br>';
+
         }
-        // print_r($save_this).'<br>';
+        // echo '<pre>';
+        // print_r($_SESSION['count']);
+        // print_r($save_this);
+        // echo '</pre>';
+        // exit();
         $_SESSION['book_details'] = $save_this ;
         $save_this =  implode(" ",$save_this);
 		// print_r($save_this);
@@ -128,7 +139,9 @@ for ($current = 0; $current < $count_per_value; $current++) {
 								"source" => $token,
 							));
 							// echo '<pre>';
-							// print_r($data);
+							// echo $data->id;
+							// echo '</pre>';
+							// exit();
 							echo '<br><br><br><br><center><h2>Redirect to home Page</h2></center>';
 
 
@@ -193,8 +206,12 @@ for ($current = 0; $current < $count_per_value; $current++) {
 							$save_this = stripslashes($save_this);
             				$save_this = mysqli_real_escape_string($conn_,$save_this);
             				
+            				// $time_check = time() + 5*60;
+            				$time_check = time() + 604800;
+            				$revoke_if_failure_happens_or_cancle = $_SESSION['json_data_for_revoke'];
 
-							$sql_ = "INSERT INTO user_deliver (full_name,book_name,street1,street2,city,zip,toal_cost_pass,stripeToken,stripeEmail,hash_token_for_client_for_ship) VALUES ('$full_name','$save_this','$street1','$street1','$city','$zip','$toal_cost_pass','$stripeToken','$stripeEmail','$hash_token_for_client_for_ship')";
+
+							$sql_ = "INSERT INTO user_deliver (user_id,full_name,book_name,street1,street2,city,zip,toal_cost_pass,stripe_token,stripeToken,Book_stock_to_revoke,stripeEmail,hash_token_for_client_for_ship,time_check) VALUES ('$user','$full_name','$save_this','$street1','$street1','$city','$zip','$toal_cost_pass','$data->id','$stripeToken','$revoke_if_failure_happens_or_cancle','$stripeEmail','$hash_token_for_client_for_ship','$time_check')";
 
 							if ($conn_->query($sql_) === TRUE) {
 							} else {
@@ -206,16 +223,6 @@ for ($current = 0; $current < $count_per_value; $current++) {
 							// after the database deleted then mail the cleint
 							 // exit();
 							require "mail_checkout.php";
-
-
-
-							
-
-
-							
-
-							
-							
 
 					}
 					else

@@ -1,12 +1,12 @@
-<?php
-  require "header.php";
-?>
 
 <?php
+require "header.php";
 
 if (isset($_SESSION['name'])) 
 { 
 $user_name_that_is_logged = $_SESSION['name'];
+
+
 
 ?>
 
@@ -239,14 +239,46 @@ Out of Stock</button>
   }else{
 
  ?>
-<input name="quantity" type="text" placeholder="Type Quantity..."><br><br>
+<input name="quantity" id="quantity_check" type="text" placeholder="Type Quantity..."><br><br>
            
-            <button type="submit" name="add" class="add_cart_style" value="Add to Cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <button type="submit" onclick="return check_null_quantity()" name="add" class="add_cart_style" value="Add to Cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Add to cart</button>
 <?php
 }
 ?>
 
+                 <script>
+                function check_null_quantity() 
+                {
+                 price = document.getElementById("quantity_check").value;
+                console.log(price)
+                 var reg = /^\d+$/;
+
+                     if(reg.test(price))
+                     {
+                      var intTest = /^-?(\d+|0)$/;
+                      if(intTest.test(price)) {
+                          if(price == 0)
+                          {
+                              alert("Quantity is Zero !!!  ")
+                              return false
+                          }
+                          if(price >= 50)
+                          {
+                              alert("Quantity is Large !!!  ")
+                              return false
+                          }
+                          return true
+
+                          }
+                        
+                     }else{
+                      alert("Check your quantity again !!! ");
+                      return false
+                    }
+                
+                }
+                </script>
 </div>
 </form>
 </div>
@@ -275,7 +307,7 @@ $_SESSION['fullUrl_passed_to_show_not_permission_from_details'] = $fullUrl_passe
       $index44="reg_date";
       $index55="sub_comemnts_to_verify";
       $index66="rating";
-      echo "<center><h3>Reviews of products<h3></center>";
+      echo "<center><h3>Reviews of Book<h3></center>";
 
 
       $array_to_verify_sub_comment = array();

@@ -57,15 +57,24 @@ if (isset($_SESSION['name']))
         $total_cost = 0;
         $count = 0;
         $quanity_check_loop = 1;
+        $revoke_stock_if_failure = array();
      while($row_html=mysqli_fetch_assoc($result_html))
       {
         $quanity_check_loop = $quanity_check_loop+1;
         $count = $count + 1;
        
         $data_array[] = $row_html;
-       // print_r($row_html);
+
+
+     
+
+        $revoke_stock_if_failure += [$row_html["book_id"] => $row_html["quantity"]];
+        $_SESSION['json_data_for_revoke'] = json_encode($revoke_stock_if_failure);
+
 
         $total_cost = $total_cost + $row_html[$index6];
+        
+        
 
 
       echo "<form action='edit_cart.php' method='POST'> ";
@@ -134,8 +143,15 @@ if (isset($_SESSION['name']))
 
               </form>';
       }
+      // echo '<pre>';
+      //   print_r($_SESSION['json_data_for_revoke']);
+      //   echo '</pre>';
 
-      echo "<pre>";
+
+        // echo '<pre>';
+        // print_r($data_array);
+        // echo '</pre>';
+        // exit();
       // print_r($data_array);
 
       // The name of book to save in database

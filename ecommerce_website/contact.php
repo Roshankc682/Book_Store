@@ -28,6 +28,8 @@ if (isset($_SESSION['name']))
             }
 
     ?>
+    <title>Online Book Store | Contact</title>
+
 <div class="container">
 <!--Section: Contact v.2-->
 <section class="mb-4">

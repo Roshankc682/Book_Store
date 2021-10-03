@@ -146,7 +146,7 @@ $conn_delete_previous->close();
 			 echo "<center><h1>Sending message wait few Seconds</h1></center>";
                 // exit();
                 
-                $from = 'Reuqested to change E-mail';
+                $from = 'Reqested to change E-mail';
                 $to_email = $new_email;
                 $subject = 'From : E-commerce-website Create account ';
                  $URLNAME = "http://$_SERVER[HTTP_HOST]";

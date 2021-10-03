@@ -42,9 +42,10 @@ $conn->close();
     $mes = "<h4>Shop more Books </h4>";
 
     $send_book_name =  implode(" ",$_SESSION['book_details']);
-
+    $place = array("Kathmandu"=>"KTM-Courier", "Chitwan"=>"Chitwan-Courier", "Lalitpur"=>"Lalitpur-Courier", "Nepalgunj"=>"Nepalgunj-Courier", "Bhaktapur"=>"Bhaktapur-Courier", "Birjung"=>"Birjung-Courier", "Nawalparasi"=>"Nawalparasi-Courier");
     $to_email = $email_of_client;
-    $subject = 'The subject : '.$sub;
+    $place_inner = $_POST["name_cour"];
+    $subject = ''.$sub;
     $body = '<html>
                       <head>
                       <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
@@ -55,10 +56,10 @@ $conn->close();
                                 border: 2px solid 76a2a2;
                                 border-radius: 15px;
                                 padding: 5px;
-                                background-color:#9af9ee;
+                                background-color:#eef9f8;
                               }
                       </style>
-                      </head><body><div class="center"><p style="color:black;font-size:35px;">'.$mes.' The token is : <strong>'.$hash_token_for_client_for_ship .'</strong>. Just make  sure to submit while shipped '.' Your request time is '.$_SESSION['time_stamp_for_client'].' after 4 business day we will delivere as per mention place <br><br>The list of Books you requested : <br>'.'<strong>'.$send_book_name.'</strong><p></div></body>
+                      </head><body><div class="center"><p style="color:black;font-size:35px;">'.$mes.' The token is : <strong>'.$hash_token_for_client_for_ship .'</strong>. Just make  sure to submit while shipped '.' Your request time is '.$_SESSION['time_stamp_for_client'].' after 4 business day we will delivere as per mention place <br><br>The list of Books you requested : <br>'.'<strong>'.$send_book_name.'</strong><p><p>Visit the courier '.$place[$place_inner].'</p><h3 style="color:red;">If Client didn\'t come to visit within week then order will be cancle automatically and refunded</h3></div></body>
                         </html>';
 
 

@@ -31,6 +31,20 @@ if (isset($_POST['login-submit']))
 
        				$stmt = mysqli_stmt_init($data_base);
 
+
+
+       				// $q = $data_base->query($query);
+       				// if($q->num_rows > 0 )
+       				// {
+       				// 	while($row = $q->fetch_assoc())
+       				// 	{
+       				// 		echo "1";
+       				// 	}
+       					
+       				// }else
+       				// {
+       				// 	echo "Not logged in";
+       				// }
        				if(!mysqli_stmt_prepare($stmt,$query))
        				{
 							header("Location: /admin_test/login.php?error=sqlerror");

@@ -63,14 +63,14 @@ $total_cost = $_SESSION['total_cost'];
                             
     <div class="form-group"> <!-- State Button -->
         <label for="state_id" class="control-label">State</label>
-        <select class="form-control" id="state_id">
-            <option value="AL">Kathmandu</option>
-            <option value="AK">Chitwan</option>
-            <option value="AK">Lalitpur</option>
-            <option value="AK">Nepalgunj</option>
-            <option value="AK">Bhaktapur</option>
-            <option value="AK">Birjung</option>
-            <option value="AK">Nawalparasi</option>
+        <select class="form-control" id="state_id" name="name_cour">
+            <option value="Kathmandu">Kathmandu</option>
+            <option value="Chitwan">Chitwan</option>
+            <option value="Lalitpur">Lalitpur</option>
+            <option value="Nepalgunj">Nepalgunj</option>
+            <option value="Bhaktapur">Bhaktapur</option>
+            <option value="Birjung">Birjung</option>
+            <option value="Nawalparasi">Nawalparasi</option>
             
         </select>                   
     </div>
