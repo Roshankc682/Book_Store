@@ -1,4 +1,4 @@
-### This code is used for admin which was built for uploading book name , author name , tittle , image and store in database.Whole code is written in php.Moreover, manupulation of data can be done
+### This code is used for admin and User Interface which was built for uploading book name , author name , tittle , image and store in database.Whole code is written in php.Moreover, manupulation of data can be done
 
 #### This data is use by ecommerce website which was build and can be found in repositories
 
